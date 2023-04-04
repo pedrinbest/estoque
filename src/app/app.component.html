@@ -1,0 +1,12 @@
+Nome: <input [(ngModel)]="pessoa.nome" /><br/>
+CPF: <input [(ngModel)]="pessoa.cpf"/><br/>
+
+<button (click)="salvar()">Salvar</button>
+
+<table>
+  <tr *ngFor="let p of pessoas">
+    <td>{{p.id}}</td>
+    <td>{{p.nome}}</td>
+    <td>{{p.cpf}}</td>
+  </tr>
+</table>
