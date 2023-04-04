@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { CalendarModule } from 'primeng/calendar';
+import { PrimeNGConfig } from 'primeng/api';
+
 @NgModule({
   declarations: [
     AppComponent

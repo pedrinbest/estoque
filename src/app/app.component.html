@@ -1,5 +1,7 @@
 Nome: <input [(ngModel)]="produto.nome" /><br/>
 PREÇO: <input [(ngModel)]="produto.preco"/><br/>
+ <p-inputMask mask="99-999999" [(ngModel)]="value" placeholder="99-999999"></p-inputMask>
+
 
 <button (click)="salvar()">Salvar</button>
 
@@ -9,4 +11,5 @@ PREÇO: <input [(ngModel)]="produto.preco"/><br/>
     <td>{{p.nome}}</td>
     <td>{{p.preco}}</td>
   </tr>
+
 </table>
