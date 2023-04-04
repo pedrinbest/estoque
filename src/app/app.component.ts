@@ -1,7 +1,7 @@
 import { LocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Pessoa } from './pessoa';
-import { PessoaService } from './pessoa.service';
+import { Produto } from './produto';
+import { ProdutoService } from './produto.service';
 
 @Component({
   selector: 'app-root',
@@ -9,28 +9,28 @@ import { PessoaService } from './pessoa.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'pessoa-view';
+  title = 'produto-view';
 
-  public pessoa: Pessoa = new Pessoa();
+  public produto: Produto = new Produto();
 
-  public pessoas:Pessoa[] = [];
+  public produtos:Produto[] = [];
 
-  constructor(private pessoaService: PessoaService){}
+  constructor(private produtoService: ProdutoService){}
 
   ngOnInit(): void {
     this.listar();
   }
 
   public salvar(){
-    console.log(this.pessoa);
-    this.pessoaService.post(this.pessoa).subscribe(r => {
+    console.log(this.produto);
+    this.produtoService.post(this.produto).subscribe(r => {
       this.listar();
     })
   }
 
   listar(){
-    this.pessoaService.get().subscribe(r => {
-      this.pessoas = r;
+    this.produtoService.get().subscribe(r => {
+      this.produtos = r;
     })
   }
 

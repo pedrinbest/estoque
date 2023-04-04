@@ -1,5 +1,5 @@
-export class Pessoa{
+export class Produto{
     public nome?: string;
-    public cpf? : string;
+    public preco? : string;
     public id? : number;
 }

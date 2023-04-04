@@ -1,12 +1,12 @@
-Nome: <input [(ngModel)]="pessoa.nome" /><br/>
-CPF: <input [(ngModel)]="pessoa.cpf"/><br/>
+Nome: <input [(ngModel)]="produto.nome" /><br/>
+PREÇO: <input [(ngModel)]="produto.preco"/><br/>
 
 <button (click)="salvar()">Salvar</button>
 
 <table>
-  <tr *ngFor="let p of pessoas">
+  <tr *ngFor="let p of produtos">
     <td>{{p.id}}</td>
     <td>{{p.nome}}</td>
-    <td>{{p.cpf}}</td>
+    <td>{{p.preco}}</td>
   </tr>
 </table>
