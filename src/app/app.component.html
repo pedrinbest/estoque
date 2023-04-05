@@ -1,15 +1,18 @@
-Nome: <input [(ngModel)]="produto.nome" /><br/>
-PREÇO: <input [(ngModel)]="produto.preco"/><br/>
- <p-inputMask mask="99-999999" [(ngModel)]="value" placeholder="99-999999"></p-inputMask>
+
+    <nb-layout>
+      <nb-layout-header fixed>Estoque</nb-layout-header>
+
+      <nb-sidebar>
+          <nb-menu [items]="items">
+          </nb-menu>
+        
+      </nb-sidebar>
+      
+      <nb-layout-column>
+        <router-outlet></router-outlet>
+      </nb-layout-column>
+    </nb-layout>
 
 
-<button (click)="salvar()">Salvar</button>
 
-<table>
-  <tr *ngFor="let p of produtos">
-    <td>{{p.id}}</td>
-    <td>{{p.nome}}</td>
-    <td>{{p.preco}}</td>
-  </tr>
 
-</table>

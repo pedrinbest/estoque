@@ -1,5 +1,9 @@
 export class Produto{
-    public nome?: string;
-    public preco? : string;
-    public id? : number;
-}
+    id: number = 0;
+    nome: string = "";
+    descricao: string = "";
+    preco: string = "";
+    quantidade: string = "";
+  
+  }
+  

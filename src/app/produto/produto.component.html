@@ -1,0 +1,23 @@
+<h1>Produto</h1>
+<div class="form-group">
+  <label for="nome" class="label">Produto:</label>
+  <input type="text" nbInput fullWidth id="nome" placeholder="Chave de Roda" [(ngModel)]="produto.nome">
+</div><br/>
+<div class="form-group">
+  <label for="descricao" class="label">Descricao:</label>
+  <input type="text" nbInput fullWidth id="descricao" placeholder="Troca de roda" [(ngModel)]="produto.descricao">
+</div><br/>
+<div class="form-group">
+  <label for="preco" class="label">Preco:</label>
+  <input type="text" nbInput fullWidth id="preco" placeholder="R$: 15,90" [(ngModel)]="produto.preco">
+</div><br/>
+<div class="form-group">
+  <label for="preco" class="label">Quantidade:</label>
+  <input type="text" nbInput fullWidth id="Quantidade" placeholder="10" [(ngModel)]="produto.preco">
+</div><br/>
+
+
+<button (click)="salvar()" nbButton status="primary">Salvar</button>
+
+<br/><br/>
+
